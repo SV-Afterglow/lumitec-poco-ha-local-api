@@ -1,0 +1,28 @@
+name: Lumitec Poco HA Bridge
+version: 1.0.0
+slug: lumitec-poco-ha-bridge
+description: Home Assistant integration for Lumitec Poco Digital Lighting Controller
+url: https://github.com/The-Greg-O/lumitec-poco-ha-local-api
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+init: false
+startup: application
+boot: auto
+options:
+  poco_host: "poco.local"
+  mqtt_broker: "mqtt://localhost"
+  mqtt_port: 1883
+  mqtt_username: "pocohabridge"
+  mqtt_password: ""
+schema:
+  poco_host: str
+  mqtt_broker: str
+  mqtt_port: int
+  mqtt_username: str
+  mqtt_password: password
+ports: {}
+host_network: true

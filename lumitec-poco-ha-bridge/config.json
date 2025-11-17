@@ -1,0 +1,13 @@
+{
+  "poco": {
+    "host": "192.168.8.245"
+  },
+  "mqtt": {
+    "broker": "mqtt://10.147.17.65",
+    "port": 1883,
+    "clientId": "poco-ha-bridge"
+  },
+  "homeassistant": {
+    "discoveryPrefix": "homeassistant"
+  }
+}
